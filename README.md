@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Finance Tracker
+
+A comprehensive personal finance management application built with Next.js, React, and TypeScript. This app helps users track their expenses, manage budgets, and gain insights into their financial health.
+
+## Features
+
+- Dashboard with financial overview
+- Account management
+- Transaction tracking
+- Budgeting tools
+- Expense categorization
+- Financial reports and analytics
+- Customizable settings
+- Notifications for bills and budget alerts
+- Help and FAQ section
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework for server-side rendering and static site generation
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces
+- [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Shadcn UI](https://ui.shadcn.com/) - Re-usable components built with Radix UI and Tailwind CSS
+- [Recharts](https://recharts.org/) - Composable charting library for React
+- [React Hook Form](https://react-hook-form.com/) - Performant, flexible and extensible forms
+- [Zod](https://github.com/colinhacks/zod) - TypeScript-first schema validation
+- [Clerk](https://clerk.dev/) - Authentication and user management (planned)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js (version 14 or later)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/JewelsHovan/personal-finance-tracker.git
+   cd personal-finance-tracker
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Run the development server:
+   ```
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Project Structure
+
+```
+personalfinancetracker/
+├── app/
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── dashboard.tsx
+│   ├── accounts-page.tsx
+│   ├── add-transaction-page.tsx
+│   ├── budgeting-page.tsx
+│   ├── help-faq-page.tsx
+│   ├── navbar.tsx
+│   ├── notifications-page.tsx
+│   └── settings-page.tsx
+├── lib/
+│   └── utils.ts
+├── public/
+├── styles/
+│   └── globals.css
+├── next.config.js
+├── package.json
+├── README.md
+└── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Planned Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- User authentication and authorization using Clerk
+- Data persistence with a backend database
+- Mobile responsiveness improvements
+- Dark mode toggle
+- Export financial data to CSV or PDF
+- Integration with bank APIs for automatic transaction imports
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
 
-## Learn More
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Acknowledgments
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://reactjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Shadcn UI Documentation](https://ui.shadcn.com/)
